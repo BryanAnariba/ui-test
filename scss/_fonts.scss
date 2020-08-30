@@ -1,0 +1,38 @@
+.secondary-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.primary-font {
+    font-family: 'Courier Prime', monospace;
+}
+
+.scolor {
+    font-size: 12px;
+    color: $secondary-color;
+}
+#pcolor {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+span .amounts{
+    padding-left: 20px;
+}
+
+.weights-font {
+    font-weight: 200;
+}
+
+.amounts-w {
+    font-weight: bolder;
+}
+
+
+#pr {
+    padding-right: 20px;
+}
+
+.ubication {
+    margin-left: 7px;
+    margin-right: 0px;
+}

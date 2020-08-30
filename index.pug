@@ -1,0 +1,154 @@
+include user-data.pug
+include order-details.pug
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Ui Test
+        link(rel="stylesheet" href="./dist/css/styles.css")
+        link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&display=swap" rel="stylesheet")
+    body
+        div.card
+            div.notifications-container
+                div.notifications-container__alerts
+                    i.far.fa-bell.bells
+                div.notifications-container__settings
+                    i.fas.fa-cog.conf
+
+            div.reminders-container
+                div.container.primary-font
+                    h1.reminders-container__title Reminders
+                    hr.reminders-container__title-margin
+
+            div.orders
+                div.orders__table-text-header.secondary-font#pr RECEPIENT
+                div.orders__table-text-header.secondary-font DEADLINE
+                div.orders__table-text-header.secondary-font AMOUNT
+            
+            div.lists  
+                div(onclick='clickMe()').orders__lists
+                    div.orders__recepient__img
+                        img(src="./dist/img/users/user-1.jpg", alt="user-1").orders__profile-images
+                    div.orders__recepient__text
+                        span.secondary-font.weights-font Tom
+                    div.orders__deadline
+                        span.secondary-font.weights-font 31/8
+                    div.orders__amount
+                        span.secondary-font.amounts-w $ 5.00
+
+                div.orders__lists-drag-down
+                    div.orders__lists-item1   
+                        i.fas.fa-map-marker-alt
+                        span.amounts-w.secondary-font#pcolor.ubication Steack House
+                    div.orders__lists-item2
+                        span.amounts-w.secondary-font#pcolor 3 
+                        span.secondary-font.scolor days left
+                    div.orders__lists-item3
+                        p.secondary-font.scolor Participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa1").orders__profile-images-participants
+                        img(src="./dist/img/users/user-2.jpg", alt="pa2").orders__profile-images-participants
+                        img(src="./dist/img/users/user-3.jpg", alt="pa3").orders__profile-images-participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa45").orders__profile-images-participants
+                    div.orders__lists-item4
+                            div.orders__lists-pay 
+                                div.secondary-font.amounts-w Pay
+                                
+
+                div(onclick='clickMe()').orders__lists
+                    div.orders__recepient__img
+                        img(src="./dist/img/users/user-2.jpg", alt="user-1").orders__profile-images
+                    div.orders__recepient__text
+                        span.secondary-font.weights-font Oliver
+                    div.orders__deadline
+                        span.secondary-font.weights-font 31/8
+                    div.orders__amount
+                        span.secondary-font.amounts-w $ 28.00
+
+                div.orders__lists-drag-down
+                    div.orders__lists-item1   
+                        i.fas.fa-map-marker-alt
+                        span.amounts-w.secondary-font#pcolor.ubication Steack House
+                    div.orders__lists-item2
+                        span.amounts-w.secondary-font#pcolor 3 
+                        span.secondary-font.scolor days left
+                    div.orders__lists-item3
+                        p.secondary-font.scolor Participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa1").orders__profile-images-participants
+                        img(src="./dist/img/users/user-2.jpg", alt="pa2").orders__profile-images-participants
+                        img(src="./dist/img/users/user-3.jpg", alt="pa3").orders__profile-images-participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa45").orders__profile-images-participants
+                    div.orders__lists-item4
+                            div.orders__lists-pay 
+                                div.secondary-font.amounts-w Pay
+
+                div(onclick='clickMe()').orders__lists
+                    div.orders__recepient__img
+                        img(src="./dist/img/users/user-3.jpg", alt="user-1").orders__profile-images
+                    div.orders__recepient__text
+                        span.secondary-font.weights-font Oliver
+                    div.orders__deadline
+                        span.secondary-font.weights-font 31/8
+                    div.orders__amount
+                        span.secondary-font.amounts-w $ 5.00
+
+                div.orders__lists-drag-down.dos
+                    div.orders__lists-item1   
+                        i.fas.fa-map-marker-alt
+                        span.amounts-w.secondary-font#pcolor.ubication Steack House
+                    div.orders__lists-item2
+                        span.amounts-w.secondary-font#pcolor 3 
+                        span.secondary-font.scolor days left
+                    div.orders__lists-item3
+                        p.secondary-font.scolor Participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa1").orders__profile-images-participants
+                        img(src="./dist/img/users/user-2.jpg", alt="pa2").orders__profile-images-participants
+                        img(src="./dist/img/users/user-3.jpg", alt="pa3").orders__profile-images-participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa45").orders__profile-images-participants
+                    div.orders__lists-item4
+                            div.orders__lists-pay 
+                                div.secondary-font.amounts-w Pay
+
+                div(onclick='clickMe(4)').orders__lists
+                    div.orders__recepient__img
+                        img(src="./dist/img/users/user-1.jpg", alt="user-1").orders__profile-images
+                    div.orders__recepient__text
+                        span.secondary-font.weights-font Oliver
+                    div.orders__deadline
+                        span.secondary-font.weights-font 31/8
+                    div.orders__amount
+                        span.secondary-font.amounts-w $ 5.00
+
+                div.orders__lists-drag-down
+                    div.orders__lists-item1   
+                        i.fas.fa-map-marker-alt
+                        span.amounts-w.secondary-font#pcolor.ubication Steack House
+                    div.orders__lists-item2
+                        span.amounts-w.secondary-font#pcolor 3 
+                        span.secondary-font.scolor days left
+                    div.orders__lists-item3
+                        p.secondary-font.scolor Participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa1").orders__profile-images-participants
+                        img(src="./dist/img/users/user-2.jpg", alt="pa2").orders__profile-images-participants
+                        img(src="./dist/img/users/user-3.jpg", alt="pa3").orders__profile-images-participants
+                        img(src="./dist/img/users/user-1.jpg", alt="pa45").orders__profile-images-participants
+                    div.orders__lists-item4
+                            div.orders__lists-pay 
+                                div.secondary-font.amounts-w Pay
+                        
+                
+            div.order-footer
+                div.order-footer__icon-home
+                    hr.order-footer__margin-footer
+                    i.fas.fa-home
+                div.order-footer__icon_pic
+                    div.order-footer__circle-btn
+                        div.order-footer__image
+                            img(src="./dist/img/icons/enfoque.svg", alt="enfoque").order-footer__enfoque
+                div.order-footer__icon-user
+                    i.fas.fa-user-friends
+
+        script(src="https://kit.fontawesome.com/bf947ba2d3.js" crossorigin="anonymous")  
+        script(src="./dist/js/index.controller.js")       
+            

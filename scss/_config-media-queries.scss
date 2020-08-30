@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $lightest-color;
+    min-height: 100%;
+}
+
+.card {
+    margin-top: 35px;
+}
+
+@mixin transition-ease-sweet {
+    transition: all 0.5s ease-in-out;
+}
+@mixin transition-ease-fast {
+    transition: all 0.3s ease-in-out;
+}
+
+@mixin media-sm {
+    @media (min-width: 320px) and (max-width: 599px) {
+        .bells , .conf , .order-footer__icon-home , .order-footer__icon-pic , .order-footer__icon-user {
+            font-size: 20px;
+        }
+    } 
+}
+
+@mixin media-md {
+    @media (min-width: 600px) and (max-width: 767px) {
+        .card {
+            margin-top: 35px;
+            width: 320px;
+            height: 711px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+}
+
+@mixin media-lg {
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .card {
+            margin-top: 35px;
+            width: 320px;
+            height: 711px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+}
+
+@mixin media-xl {
+    @media (min-width: 1024px) {
+        .card {
+            margin-top: 35px;
+            width: 320px;
+            height: 711px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    } 
+}
