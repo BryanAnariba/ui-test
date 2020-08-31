@@ -1,16 +1,16 @@
-mixin orderDetails(localitation , img_p1 , img_p2 , img_p3 , img_p4)
+mixin orderDetails()
     div.orders__lists-item1   
         i.fas.fa-map-marker-alt
-        span.amounts-w.secondary-font#pcolor= localitation
+        span.amounts-w.secondary-font#pcolor.ubication Steack House
     div.orders__lists-item2
         span.amounts-w.secondary-font#pcolor 3 
         span.secondary-font.scolor days left
     div.orders__lists-item3
         p.secondary-font.scolor Participants
-        img(src=img_p1, alt="").orders__profile-images-participants
-        img(src=img_p2, alt="").orders__profile-images-participants
-        img(src=img_p3, alt="").orders__profile-images-participants
-        img(src=img_p4, alt="").orders__profile-images-participants
+        img(src="./dist/img/users/user-1.jpg", alt="pa1").orders__profile-images-participants
+        img(src="./dist/img/users/user-2.jpg", alt="pa2").orders__profile-images-participants
+        img(src="./dist/img/users/user-3.jpg", alt="pa3").orders__profile-images-participants
+        img(src="./dist/img/users/user-1.jpg", alt="pa45").orders__profile-images-participants
     div.orders__lists-item4
-        div.orders__lists-pay 
-            div.secondary-font.amounts-w Pay
+            div.orders__lists-pay 
+                div.secondary-font.amounts-w Pay

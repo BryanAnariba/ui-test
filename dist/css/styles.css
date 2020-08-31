@@ -4,12 +4,17 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #ececea;
   min-height: 100%;
 }
 
 .card {
-  margin-top: 35px;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.container {
+  padding-top: 35px;
 }
 
 .secondary-font {
@@ -82,7 +87,7 @@ span .amounts {
       grid-template-columns: 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .reminders-container__title {
@@ -149,8 +154,8 @@ span .amounts {
   margin-right: auto;
   padding: 10px 0 20px 0;
   overflow: hidden;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
   -webkit-transform: translateX(-100vw);
           transform: translateX(-100vw);
   -webkit-transition: all 0.5s ease-in-out;
@@ -158,10 +163,10 @@ span .amounts {
 }
 
 .orders__lists-item1.open {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
 }
 
 .orders__lists-item2 {
@@ -169,8 +174,8 @@ span .amounts {
   margin-right: auto;
   padding: 10px 0 20px 0;
   overflow: hidden;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: all 0.5s ease-in-out;
@@ -178,10 +183,10 @@ span .amounts {
 }
 
 .orders__lists-item2.open {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
 }
 
 .orders__lists-item3 {
@@ -189,8 +194,8 @@ span .amounts {
   margin-right: auto;
   padding-left: 34px;
   overflow: hidden;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
   -webkit-transform: translateX(-100vw);
           transform: translateX(-100vw);
   -webkit-transition: all 0.5s ease-in-out;
@@ -198,17 +203,17 @@ span .amounts {
 }
 
 .orders__lists-item3.open {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
 }
 
 .orders__lists-item4 {
   margin-left: auto;
   overflow: hidden;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-100vh);
+          transform: translateY(-100vh);
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: all 0.5s ease-in-out;
@@ -216,10 +221,10 @@ span .amounts {
 }
 
 .orders__lists-item4.open {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateY(0vh);
+          transform: translateY(0vh);
+  -webkit-transform: translateX(0vw);
+          transform: translateX(0vw);
 }
 
 .orders__lists-drag-down {
@@ -236,15 +241,16 @@ span .amounts {
   position: fixed;
   visibility: hidden;
   overflow: hidden;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  width: 100vw;
+  -webkit-transform: translateY(-70vw);
+          transform: translateY(-70vw);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .orders__lists-drag-down.open {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(0vw);
+          transform: translateY(0vw);
   visibility: visible;
   position: relative;
 }
@@ -296,18 +302,19 @@ span .amounts {
 }
 
 .order-footer {
-  height: 60px;
-  width: 1;
+  height: 20vw;
+  height: 20vw;
   display: -ms-grid;
   display: grid;
-  width: 82%;
-  margin-left: auto;
-  margin-right: auto;
   -ms-grid-columns: 1fr 2fr 1fr;
-      grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  gap: 20px;
+  grid-template-rows: auto;
+  width: 100vw;
+  position: fixed;
+  bottom: 0vw;
+  z-index: 3;
+  background: white;
 }
 
 .order-footer__enfoque {
@@ -317,16 +324,16 @@ span .amounts {
 
 .order-footer__margin-footer {
   border: solid 2px #FFBA00;
-  width: 49px;
+  width: 60px;
   margin-top: -6px;
   margin-bottom: 12px;
-  margin-left: -11px;
+  margin-left: -22px;
 }
 
 .order-footer__icon-home {
-  margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  padding-left: 39px;
 }
 
 .order-footer__circle-btn {
@@ -343,14 +350,14 @@ span .amounts {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: -26px;
 }
 
 .order-footer__icon-user {
-  margin-left: auto;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: auto;
+  padding-right: 33px;
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
@@ -361,9 +368,6 @@ span .amounts {
 
 @media (min-width: 600px) and (max-width: 767px) {
   .card {
-    margin-top: 35px;
-    width: 320px;
-    height: 711px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -371,9 +375,6 @@ span .amounts {
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .card {
-    margin-top: 35px;
-    width: 320px;
-    height: 711px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -381,11 +382,23 @@ span .amounts {
 
 @media (min-width: 1024px) {
   .card {
-    margin-top: 35px;
     width: 320px;
-    height: 711px;
+    height: 568px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .orders__lists-drag-down {
+    width: 320px;
+  }
+  .orders {
+    width: 320px;
+  }
+  .order-footer {
+    width: 320px;
+    height: 134px;
+  }
+  .order-footer__icon_pic {
+    margin-top: 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

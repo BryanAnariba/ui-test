@@ -4,12 +4,22 @@
 }
 
 body {
-    background-color: $lightest-color;
+    background-color: rgb(236, 236, 234);
     min-height: 100%;
 }
 
 .card {
-    margin-top: 35px;
+    min-height: 100vh;
+    background-color: $lightest-color;
+}
+
+.container {
+    padding-top: 35px;
+}   
+
+@mixin margins {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @mixin transition-ease-sweet {
@@ -30,9 +40,6 @@ body {
 @mixin media-md {
     @media (min-width: 600px) and (max-width: 767px) {
         .card {
-            margin-top: 35px;
-            width: 320px;
-            height: 711px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -41,10 +48,7 @@ body {
 
 @mixin media-lg {
     @media (min-width: 768px) and (max-width: 1023px) {
-        .card {
-            margin-top: 35px;
-            width: 320px;
-            height: 711px;
+        .card{
             margin-left: auto;
             margin-right: auto;
         }
@@ -53,12 +57,26 @@ body {
 
 @mixin media-xl {
     @media (min-width: 1024px) {
-        .card {
-            margin-top: 35px;
+        .card{
             width: 320px;
-            height: 711px;
+            height: 568px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .orders__lists-drag-down {
+            width: 320px;
+        }
+
+        .orders {
+            width: 320px;
+        }
+        .order-footer {
+            width: 320px;
+            height: 134px;
+        }
+        .order-footer__icon_pic {
+            margin-top: 0px;
         }
     } 
 }

@@ -10,96 +10,134 @@
   </head>
   <body>
     <div class="card">
-      <div class="notifications-container">
-        <div class="notifications-container__alerts"><i class="far fa-bell bells"></i></div>
-        <div class="notifications-container__settings"><i class="fas fa-cog conf"></i></div>
-      </div>
-      <div class="reminders-container">
-        <div class="container primary-font">
-          <h1 class="reminders-container__title">Reminders</h1>
-          <hr class="reminders-container__title-margin">
+      <div class="container">
+        <div class="notifications-container">
+          <div class="notifications-container__alerts"><i class="far fa-bell bells"></i></div>
+          <div class="notifications-container__settings"><i class="fas fa-cog conf"></i></div>
         </div>
-      </div>
-      <div class="orders">
-        <div class="orders__table-text-header secondary-font" id="pr">RECEPIENT</div>
-        <div class="orders__table-text-header secondary-font">DEADLINE</div>
-        <div class="orders__table-text-header secondary-font">AMOUNT</div>
-      </div>
-      <div class="lists"> 
-        <div class="orders__lists" onclick="clickMe()">
-          <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-1.jpg" alt="user-1"></div>
-          <div class="orders__recepient__text"><span class="secondary-font weights-font">Tom</span></div>
-          <div class="orders__deadline"><span class="secondary-font weights-font">31/8</span></div>
-          <div class="orders__amount"><span class="secondary-font amounts-w">$ 5.00</span></div>
-        </div>
-        <div class="orders__lists-drag-down">
-          <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
-          <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
-          <div class="orders__lists-item3">
-            <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45">
+        <div class="reminders-container">
+          <div class="container primary-font">
+            <h1 class="reminders-container__title">Reminders</h1>
+            <hr class="reminders-container__title-margin">
           </div>
-          <div class="orders__lists-item4">
-            <div class="orders__lists-pay"> 
-              <div class="secondary-font amounts-w">Pay</div>
+        </div>
+        <div class="orders">
+          <div class="orders__table-text-header secondary-font" id="pr">RECEPIENT</div>
+          <div class="orders__table-text-header secondary-font">DEADLINE</div>
+          <div class="orders__table-text-header secondary-font">AMOUNT</div>
+        </div>
+        <div class="lists"> 
+          <div class="orders__lists" onclick="clickMe()">
+            <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-1.jpg" alt=""></div>
+            <div class="orders__recepient__text"><span class="secondary-font weights-font">Tom</span></div>
+            <div class="orders__deadline"><span class="secondary-font weights-font">31/08</span></div>
+            <div class="orders__amount"><span class="secondary-font amounts-w">$5.00</span></div>
+          </div>
+          <div class="orders__lists-drag-down">
+            <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
+            <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
+            <div class="orders__lists-item3">
+              <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"/><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"/><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"/><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45"/>
+            </div>
+            <div class="orders__lists-item4">
+              <div class="orders__lists-pay"> 
+                <div class="secondary-font amounts-w">Pay</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__lists" onclick="clickMe()">
+            <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-2.jpg" alt=""></div>
+            <div class="orders__recepient__text"><span class="secondary-font weights-font">Oliver</span></div>
+            <div class="orders__deadline"><span class="secondary-font weights-font">31/08</span></div>
+            <div class="orders__amount"><span class="secondary-font amounts-w">$28.00</span></div>
+          </div>
+          <div class="orders__lists-drag-down">
+            <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
+            <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
+            <div class="orders__lists-item3">
+              <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"/><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"/><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"/><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45"/>
+            </div>
+            <div class="orders__lists-item4">
+              <div class="orders__lists-pay"> 
+                <div class="secondary-font amounts-w">Pay</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__lists" onclick="clickMe()">
+            <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-3.jpg" alt=""></div>
+            <div class="orders__recepient__text"><span class="secondary-font weights-font">Tom</span></div>
+            <div class="orders__deadline"><span class="secondary-font weights-font">31/08</span></div>
+            <div class="orders__amount"><span class="secondary-font amounts-w">$5.00</span></div>
+          </div>
+          <div class="orders__lists-drag-down">
+            <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
+            <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
+            <div class="orders__lists-item3">
+              <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"/><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"/><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"/><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45"/>
+            </div>
+            <div class="orders__lists-item4">
+              <div class="orders__lists-pay"> 
+                <div class="secondary-font amounts-w">Pay</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__lists" onclick="clickMe()">
+            <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-1.jpg" alt=""></div>
+            <div class="orders__recepient__text"><span class="secondary-font weights-font">Tom</span></div>
+            <div class="orders__deadline"><span class="secondary-font weights-font">31/08</span></div>
+            <div class="orders__amount"><span class="secondary-font amounts-w">$5.00</span></div>
+          </div>
+          <div class="orders__lists-drag-down">
+            <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
+            <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
+            <div class="orders__lists-item3">
+              <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"/><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"/><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"/><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45"/>
+            </div>
+            <div class="orders__lists-item4">
+              <div class="orders__lists-pay"> 
+                <div class="secondary-font amounts-w">Pay</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__lists" onclick="clickMe()">
+            <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-2.jpg" alt=""></div>
+            <div class="orders__recepient__text"><span class="secondary-font weights-font">Matt</span></div>
+            <div class="orders__deadline"><span class="secondary-font weights-font">31/08</span></div>
+            <div class="orders__amount"><span class="secondary-font amounts-w">$5.00</span></div>
+          </div>
+          <div class="orders__lists-drag-down">
+            <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
+            <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
+            <div class="orders__lists-item3">
+              <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"/><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"/><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"/><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45"/>
+            </div>
+            <div class="orders__lists-item4">
+              <div class="orders__lists-pay"> 
+                <div class="secondary-font amounts-w">Pay</div>
+              </div>
+            </div>
+          </div>
+          <div class="orders__lists" onclick="clickMe()">
+            <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-3.jpg" alt=""></div>
+            <div class="orders__recepient__text"><span class="secondary-font weights-font">Oliver</span></div>
+            <div class="orders__deadline"><span class="secondary-font weights-font">31/08</span></div>
+            <div class="orders__amount"><span class="secondary-font amounts-w">$5.00</span></div>
+          </div>
+          <div class="orders__lists-drag-down">
+            <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
+            <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
+            <div class="orders__lists-item3">
+              <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"/><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"/><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"/><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45"/>
+            </div>
+            <div class="orders__lists-item4">
+              <div class="orders__lists-pay"> 
+                <div class="secondary-font amounts-w">Pay</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="orders__lists" onclick="clickMe()">
-          <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-2.jpg" alt="user-1"></div>
-          <div class="orders__recepient__text"><span class="secondary-font weights-font">Oliver</span></div>
-          <div class="orders__deadline"><span class="secondary-font weights-font">31/8</span></div>
-          <div class="orders__amount"><span class="secondary-font amounts-w">$ 28.00</span></div>
-        </div>
-        <div class="orders__lists-drag-down">
-          <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
-          <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
-          <div class="orders__lists-item3">
-            <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45">
-          </div>
-          <div class="orders__lists-item4">
-            <div class="orders__lists-pay"> 
-              <div class="secondary-font amounts-w">Pay</div>
-            </div>
-          </div>
-        </div>
-        <div class="orders__lists" onclick="clickMe()">
-          <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-3.jpg" alt="user-1"></div>
-          <div class="orders__recepient__text"><span class="secondary-font weights-font">Oliver</span></div>
-          <div class="orders__deadline"><span class="secondary-font weights-font">31/8</span></div>
-          <div class="orders__amount"><span class="secondary-font amounts-w">$ 5.00</span></div>
-        </div>
-        <div class="orders__lists-drag-down">
-          <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
-          <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
-          <div class="orders__lists-item3">
-            <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45">
-          </div>
-          <div class="orders__lists-item4">
-            <div class="orders__lists-pay"> 
-              <div class="secondary-font amounts-w">Pay</div>
-            </div>
-          </div>
-        </div>
-        <div class="orders__lists" onclick="clickMe(4)">
-          <div class="orders__recepient__img"><img class="orders__profile-images" src="./dist/img/users/user-1.jpg" alt="user-1"></div>
-          <div class="orders__recepient__text"><span class="secondary-font weights-font">Oliver</span></div>
-          <div class="orders__deadline"><span class="secondary-font weights-font">31/8</span></div>
-          <div class="orders__amount"><span class="secondary-font amounts-w">$ 5.00</span></div>
-        </div>
-        <div class="orders__lists-drag-down">
-          <div class="orders__lists-item1">  <i class="fas fa-map-marker-alt"></i><span class="amounts-w secondary-font ubication" id="pcolor">Steack House</span></div>
-          <div class="orders__lists-item2"><span class="amounts-w secondary-font" id="pcolor">3 </span><span class="secondary-font scolor">days left</span></div>
-          <div class="orders__lists-item3">
-            <p class="secondary-font scolor">Participants</p><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa1"><img class="orders__profile-images-participants" src="./dist/img/users/user-2.jpg" alt="pa2"><img class="orders__profile-images-participants" src="./dist/img/users/user-3.jpg" alt="pa3"><img class="orders__profile-images-participants" src="./dist/img/users/user-1.jpg" alt="pa45">
-          </div>
-          <div class="orders__lists-item4">
-            <div class="orders__lists-pay"> 
-              <div class="secondary-font amounts-w">Pay</div>
-            </div>
-          </div>
-        </div>
       </div>
-      <div class="order-footer">
+      <div class="order-footer styles-footer">
         <div class="order-footer__icon-home">
           <hr class="order-footer__margin-footer"><i class="fas fa-home"></i>
         </div>
